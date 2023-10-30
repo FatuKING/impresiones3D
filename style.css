@@ -1,0 +1,51 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  --violet4: rgb(55, 27, 88);
+  --violet3: rgb(76, 53, 117);
+  --violet2: rgb(91, 75, 138);
+  --violet1: rgb(120, 88, 166);
+
+  --violet-4: #000000;
+  --violet-3: #3E065F;
+  --violet-2: #700B97;
+  --violet-1: #8E05C2;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animation-line::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: width 1.5s ease;
+  background: linear-gradient(90deg, hsla(268, 64%, 53%, 1) 0%, hsla(260, 100%, 49%, 1) 100%);
+}
+
+.animation-line:hover:before{
+  width: 100%;
+}
