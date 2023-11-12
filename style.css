@@ -11,15 +11,18 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  --violet4: rgb(55, 27, 88);
-  --violet3: rgb(76, 53, 117);
-  --violet2: rgb(91, 75, 138);
-  --violet1: rgb(120, 88, 166);
+  --violet50: #f7f5fd;
+  --violet100: #f1ecfb;
+  --violet200: #e4dbf9;
+  --violet300: #d0bff3;
+  --violet400: #b79aeb;
+  --violet500: #9f71e1;
+  --violet600: #9052d5;
+  --violet700: #8040c1;
+  --violet800: #6b35a2;
+  --violet900: #592d85;
+  --violet950: #371b58;
 
-  --violet-4: #000000;
-  --violet-3: #3E065F;
-  --violet-2: #700B97;
-  --violet-1: #8E05C2;
 
 
   font-synthesis: none;
@@ -41,11 +44,41 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px;
+  height: 3px;
   transition: width 1.5s ease;
-  background: linear-gradient(90deg, hsla(268, 64%, 53%, 1) 0%, hsla(260, 100%, 49%, 1) 100%);
+  background: linear-gradient(90deg, var(--violet500) 0%, var(--violet800) 100%);
 }
 
 .animation-line:hover:before{
   width: 100%;
 }
+
+.bg-main{
+  background-color: var(--violet800);
+}
+
+.bg-aside{
+  background-color: var(--violet900);
+}
+
+article:hover .animation-line::before{
+  width: 100%;
+}
+
+.gridRow{
+  grid-template-rows: auto repeat(3, 1fr);
+}
+                      
+.pulse {
+  animation-name: pulse;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1); opacity: 0.6;}
+  50% {transform: scale(1.05); opacity: 0.8;}
+  100% {transform: scale(1); opacity: 0.6;}
+}
+            
+          

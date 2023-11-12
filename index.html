@@ -2,37 +2,171 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/pokebola.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Efege.3D</title>
+    <title>Efege 3D</title>
   </head>
   <body class="flex">
-    <aside class="flex flex-col h-screen w-80 font-mono bg-cyan-800 space-y-20">
+    <aside class="flex flex-col fixed h-screen w-64 font-mono bg-aside space-y-20">
       <h1 class="m-8 text-4xl"><strong>Efege 3D</strong></h1>
 
       <ul class="m-8">
-        <li class="text-2xl relative animation-line"><a href="">Inicio</a></li>
-        <li class="text-2xl relative animation-line"><a href="">Productos</a></li>
-        <li class="text-2xl relative animation-line"><a href="">Formas de pago</a></li>
+        <li class="text-2xl relative inline-block w-auto animation-line"><a href="#">Inicio</a></li>
+        <li class="text-2xl relative inline-block w-auto animation-line"><a href="#productos">Productos</a></li>
+        <li class="text-2xl relative inline-block w-auto animation-line"><a href="">Formas de pago</a></li>
       </ul>
-
+ 
       <figure class="m-8">
-        <img class="opacity-75" src="/public/gengar.png" alt="gengarEyes">
+        <img class="pulse" src="/public/gengar.png" alt="gengarEyes">
       </figure>
     </aside>
 
-    <main class="bg-indigo-950 container">
-      <section class="p-24">
-        <article class="flex justify-center items-center">
-          <h1 class="text-3xl inline-block">Bienvenidos al Centro Pokémon 3D</h1>
+    <main class="w-full h-auto flex flex-col ml-64 bg-main">
+      <section class="h-screen p-24 pb-0 font-mono">
+        <article class="flex justify-center items-center mb-16">
+          <div>
+          <h1 class="text-3xl inline-block">Impresiones Pokémon en 3D</h1>
+
+          <p class="text-center text-violet-950 font-bold">Hecho por fanaticos para fanaticos</p>
+          </div>
 
           <figure class="w-30 h-40">
             <img class="h-full w-full object-cover" src="/public/pikachu.png" alt="pikachu">
           </figure>
         </article>
-       
+
+        <article class="flex flex-col ml-20 mr-20">
+          <h1 class="text-2xl relative w-max animation-line mb-2">Sobre nosotros:</h1>
+
+          <p class="text-lg inline-block">En Efege 3D, nos dedicamos a llevar la imaginación a la realidad. Nuestra misión es proporcionar a los amantes de Pokémon productos excepcionales y personalizados que capturen la esencia de cada Pokémon. Creemos que cada fanático merece tener en sus manos una pieza única que refleje su amor por Pokémon.</p>
+        </article>
       </section>
 
+      <section class="h-auto grid grid-cols-2 gridRow gap-6 p-24 pt-12 pb-0 font-mono" id="productos">
+        <h1 class="text-2xl col-span-2">Productos</h1>
+
+        <article class="flex gap-8 bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+          <figure class="h-full w-1/2 object-cover">
+            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
+          </figure>
+
+          <div class="flex flex-col justify-around">
+            <h3 class="text-lg">Charizard</h3>
+            
+            <span class="text-lg">$4.000</span>
+
+            <select name="selectorCm" id="cm">
+              <option value="10cm">10 CM</option>
+              <option value="10cm">15 CM</option>
+            </select>
+
+            <button class="">WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="flex gap-8 bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+          <figure class="h-full w-1/2 object-cover">
+            <img class="h-full w-full" src="/public/chicorita.jpeg" alt="charizardImg">
+          </figure>
+
+          <div class="flex flex-col justify-around">
+            <h3 class="text-lg">Charizard</h3>
+            
+            <span class="text-lg">$4.000</span>
+
+            <select name="selectorCm" id="cm">
+              <option value="10cm">10 CM</option>
+              <option value="10cm">15 CM</option>
+            </select>
+
+            <button class="">WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="flex gap-8 bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+          <figure class="h-full w-1/2 object-cover">
+            <img class="h-full w-full" src="/public/blaistoide1.jpeg" alt="charizardImg">
+          </figure>
+
+          <div class="flex flex-col justify-around">
+            <h3 class="text-lg">Blastoise</h3>
+
+            <span class="text-lg">$4.000</span>
+
+            <select name="selectorCm" id="cm">
+              <option value="10cm">10 CM</option>
+              <option value="10cm">15 CM</option>
+            </select>
+
+            <button class="">WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="flex gap-8 bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+          <figure class="h-full w-1/2 object-cover">
+            <img class="h-full w-full" src="/public/chamander.jpeg" alt="charizardImg">
+          </figure>
+
+          <div class="flex flex-col justify-around">
+            <h3 class="text-lg">Charmander</h3>
+
+            <span class="text-lg">$4.000</span>
+
+            <select name="selectorCm" id="cm">
+              <option value="10cm">10 CM</option>
+              <option value="10cm">15 CM</option>
+            </select>
+
+            <button class="">WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="flex gap-8 bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+          <figure class="h-full w-1/2 object-cover">
+            <img class="h-full w-full" src="/public/amarillo.jpeg" alt="charizardImg">
+          </figure>
+
+          <div class="flex flex-col justify-around">
+            <h3 class="text-lg">Saidok</h3>
+
+            <span class="text-lg">$4.000</span>
+
+            <select name="selectorCm" id="cm">
+              <option value="10cm">10 CM</option>
+              <option value="10cm">15 CM</option>
+            </select>
+
+            <button class="">WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="flex gap-8 bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+          <figure class="h-full w-1/2 object-cover">
+            <img class="h-full w-full" src="/public/personalizado.jpeg" alt="charizardImg">
+          </figure>
+
+          <div class="flex flex-col justify-around">
+            <h3 class="text-lg">Personalizado</h3>
+
+            <span class="text-lg">$4.000</span>
+
+            <select name="selectorCm" id="cm">
+              <option value="10cm">10 CM</option>
+              <option value="10cm">15 CM</option>
+            </select>
+
+            <button class="">WhatsApp</button>
+          </div>
+        </article>
+      </section>
+
+      <div class="flex flex-col-reverse items-center gap-4 fixed bottom-0 right-14">
+        <span class="block w-10 h-1 bg-black rounded-sm transform -rotate-90 mt-2"></span>
+
+        <a href="https://www.instagram.com/efege.3d/" target="_blank"><img class="h-5 hover:scale-110" src="/public/instagram.svg" alt="instagram.svg"></a>
+        <a href="" target="_blank"><img class="h-5 hover:scale-110" src="/public/tiktok.svg" alt="tiktok.svg"></a>
+        <button id="darkMode"><img class="h-5 hover:scale-110" src="/public/brightness-high.svg" alt="darkmode"></button>
+      </div>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
