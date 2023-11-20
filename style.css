@@ -11,7 +11,7 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  --violet50: #f7f5fd;
+  --violet50: #FF4F00;
   --violet100: #f1ecfb;
   --violet200: #e4dbf9;
   --violet300: #d0bff3;
@@ -44,9 +44,10 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   transition: width 1.5s ease;
-  background: linear-gradient(90deg, var(--violet500) 0%, var(--violet800) 100%);
+  background-color: #FF4F00;
+  /* background: linear-gradient(90deg, var(--violet50) 0%, var(--violet900) 100%); */
 }
 
 .animation-line:hover:before{
@@ -77,8 +78,43 @@ article:hover .animation-line::before{
 
 @keyframes pulse {
   0% {transform: scale(1); opacity: 0.6;}
-  50% {transform: scale(1.05); opacity: 0.8;}
+  50% {transform: scale(1.); opacity: 0.8;}
   100% {transform: scale(1); opacity: 0.6;}
 }
-            
-          
+
+.btn {
+  background-color: var(--violet600);
+  padding: 5px 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: width 3s;
+}
+
+.btn span{
+  position: relative;
+  z-index: 2;
+}
+
+.btn::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--violet700);
+  transition: width 1s;
+  z-index: 1;
+}
+
+.btn:hover {
+  
+}
+
+.btn:hover::before {
+  width: 100%;
+}
