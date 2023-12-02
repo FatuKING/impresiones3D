@@ -19,8 +19,8 @@
   --violet500: #9f71e1;
   --violet600: #9052d5;
   --violet700: #8040c1;
-  --violet800: #6b35a2;
-  --violet900: #592d85;
+  --violet800: #343541;
+  --violet900: #000000;
   --violet950: #371b58;
 
 
@@ -67,11 +67,24 @@ article:hover .animation-line::before{
 }
 
 .gridRow{
-  grid-template-rows: auto repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.gridRow2{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+@media (min-width: 1280px){
+  .gridRow{ grid-template-columns: repeat(3, minmax(300px, 1fr));}
+}
+
                       
 .btn {
   background-color: var(--violet600);
+  max-width: 108px;
   padding: 5px 10px;
   display: inline-block;
   position: relative;
@@ -166,4 +179,13 @@ label span:before {
   0% {transform: scale(1); opacity: 0.6;}
   50% {transform: scale(1.05); opacity: 0.8;}
   100% {transform: scale(1); opacity: 0.6;}
+}
+
+@keyframes scroll-animation {
+  0% {
+
+  }
+  100% {
+    
+  }
 }

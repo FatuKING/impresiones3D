@@ -5,8 +5,11 @@ export default {
     './main.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'charizard1': "url('/public/charizard1.jpeg')",
+    },
   },
   plugins: [],
-}
+}}
 
