@@ -9,12 +9,12 @@
   <body class="lg:flex">
      <!-- Aside -->
     <aside class="lg:flex flex-col fixed h-screen w-64 pt-14 pb-14 font-mono bg-aside justify-between hidden">
-      <h1 class="m-8 text-4xl"><strong>Efege 3D</strong></h1>
+      <h1 class="m-8 text-orange-600 text-4xl"><strong>Efege 3D</strong></h1>
 
       <ul class="m-8">
-        <li class="text-2xl relative inline-block w-auto animation-line"><a href="#">Inicio</a></li>
-        <li class="text-2xl relative inline-block w-auto animation-line"><a href="#productos">Productos</a></li>
-        <li class="text-2xl relative inline-block w-auto animation-line"><a href="#formasDePago">Como Comprar</a></li>
+        <li class="text-2xl relative inline-block w-auto hover:text-orange-600"><a href="#">Inicio</a></li>
+        <li class="text-2xl relative inline-block w-auto hover:text-orange-600"><a href="#productos">Productos</a></li>
+        <li class="text-2xl relative inline-block w-auto hover:text-orange-600"><a href="#formasDePago">Como Comprar</a></li>
       </ul>
  
       <figure class="m-4">
@@ -23,32 +23,32 @@
     </aside>
     <!-- Header -->
     <header class="flex w-full p-4 justify-around items-center bg-aside lg:hidden">
-      <h1 class="hidden text-xl sm:block md:text-3xl"><strong>Efege 3D</strong></h1>
+      <h1 class="hidden text-xl text-orange-600 sm:block md:text-3xl"><strong>Efege 3D</strong></h1>
 
       <ul class="flex gap-4">
-        <li class="text-base md:text-xl relative inline-block w-auto animation-line"><a href="#">Inicio</a></li>
-        <li class="text-base md:text-xl relative inline-block w-auto animation-line"><a href="#productos">Productos</a></li>
-        <li class="text-base md:text-xl relative inline-block w-auto animation-line"><a href="#formasDePago">Como Comprar</a></li>
+        <li class="text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#">Inicio</a></li>
+        <li class="text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#productos">Productos</a></li>
+        <li class="text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#formasDePago">Como Comprar</a></li>
       </ul>
     </header>
      <!-- Main -->
     <main class="w-full h-auto flex flex-col lg:ml-64 bg-main">
        <!-- Home -->
-      <section class="h-auto lg:h-screen p-8 md:p-16 lg:p-24 lg:pb-0 font-mono">
+      <section class="h-auto lg:h-screen p-8 pt-16 md:p-16 lg:p-24 lg:pb-0 font-mono">
         <article class="flex justify-center items-center mb-16">
           <div>
           <h1 class="text-lg md:text-3xl lg:text-4xl inline-block">Impresiones Pokémon en 3D</h1>
 
-          <p class="text-sm md:text-lg text-center text-orange-600 font-bold">Hecho por fanaticos para fanaticos</p>
+          <p class="text-xs sm:text-sm md:text-lg text-center text-orange-600 font-bold">Hecho por fanaticos para fanaticos</p>
           </div>
 
-          <figure class="w-30 h-40">
+          <figure class="hidden w-30 sm:block sm:h-40">
             <img class="h-full w-full object-cover" src="/public/pikachu.png" alt="pikachu">
           </figure>
         </article>
 
         <article class="flex flex-col md:mr-24">
-          <h2 class="md:text-2xl relative w-max animation-line mb-2">Sobre nosotros</h2>
+          <h2 class="md:text-2xl relative w-max mb-2">Sobre nosotros</h2>
 
           <p class="text-sm md:text-lg lg:text-xl inline-block">En Efege 3D, nos dedicamos a llevar la imaginación a la realidad. Nuestra misión es proporcionar a los amantes de Pokémon productos excepcionales y personalizados que capturen la esencia de cada Pokémon. Creemos que cada fanático merece tener en sus manos una pieza única que refleje su amor por Pokémon.</p>
         </article>
@@ -56,152 +56,242 @@
       <!-- Productos -->
       <div class="p-8 pb-3 sm:p-16 sm:pb-3 lg:p-24 lg:pb-3 lg:pt-8 font-mono" id="productos">
         <h3 class="text-2xl">Productos</h3>
-        <p class="text-orange-600">Consultar por medidas personalizas.</p>
+        <p class="text-orange-600">Consultar por medidas personalizadas.</p>
       </div>
 
       <section class="h-auto grid gridRow gap-6 p-8 pt-0 pb-0 sm:p-16 sm:pb-0 sm:pt-0 lg:p-24 lg:pb-0 lg:pt-0 font-mono">
-        <article class="flex flex-col bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
+        <article class="flex flex-col border-black border-2 shadow-black shadow-sm" data-aos="slide-up">
           
-          <figure class="max-h-60 max-w-20 w-full object-cover relative">
-            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
-            <span class="text-lg price bg-black p-2 rounded-full absolute bottom-0 right-2">$4.000</span>
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg1">
+            <img class="imgHover" src="/public/charizard2.jpeg" alt="charizardImg2">
           </figure>
 
-          <div class="flex flex-col gap-2 h-full p-6">
+          <div class="flex flex-col gap-1 h-full p-3">
             <h3 class="text-lg">Charizard</h3>
 
-            <p class="">Disponible en 10cm y 15cm, pintado a mano impreso en 3D</p>
+            <p class="">Disponible en 10cm y 15cm.</p>
 
-            <a class="btn" 
-            href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
-            target="_blank">
-            <span>Contactenos</span>
-            </a>
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="flex flex-col bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
-          <figure class="max-h-60 max-w-20 w-full object-cover relative">
-            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
-            <span class="text-lg price bg-black p-2 rounded-full absolute bottom-0 right-2">$4.000</span>
+        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/blastoise1.jpeg" alt="blastoiseImg1">
+            <img class="imgHover" src="/public/blastoise2.jpeg" alt="blastoiseImg2">
           </figure>
 
-          <div class="flex flex-col gap-2 h-full p-6">
-            <h3 class="text-lg">Charizard</h3>
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Blastoise</h3>
 
-            <p class="">Disponible en 10cm y 15cm, pintado a mano impreso en 3D</p>
+            <p class="">Disponible en 10cm y 15cm.</p>
 
-            <a class="btn" 
-            href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
-            target="_blank">
-            <span>Contactenos</span>
-            </a>
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="flex flex-col bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
-          <figure class="max-h-60 max-w-20 w-full object-cover relative">
-            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
-            <span class="text-lg price bg-black p-2 rounded-full absolute bottom-0 right-2">$4.000</span>
+        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full imgChange relative">
+            <img class="h-full w-full" src="/public/gengar1.jpeg" alt="gengarImg1">
+            <img class="imgHover" src="/public/gengar2.jpeg" alt="gengarImg2">
           </figure>
 
-          <div class="flex flex-col gap-2 h-full p-6">
-            <h3 class="text-lg">Charizard</h3>
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Gengar</h3>
 
-            <p class="">Disponible en 10cm y 15cm, pintado a mano impreso en 3D</p>
+            <p class="">Disponible en 10cm y 15cm.</p>
 
-            <a class="btn" 
-            href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
-            target="_blank">
-            <span>Contactenos</span>
-            </a>
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="flex flex-col bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
-          <figure class="max-h-60 max-w-20 w-full object-cover relative">
-            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
-            <span class="text-lg price bg-black p-2 rounded-full absolute bottom-0 right-2">$4.000</span>
+        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/charmander1.jpeg" alt="charmanderImg1">
+            <img class="imgHover" src="/public/charmander2.jpeg" alt="charmanderImg2">
           </figure>
 
-          <div class="flex flex-col gap-2 h-full p-6">
-            <h3 class="text-lg">Charizard</h3>
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Charmander</h3>
 
-            <p class="">Disponible en 10cm y 15cm, pintado a mano impreso en 3D</p>
+            <p class="">Disponible en 10cm y 15cm.</p>
 
-            <a class="btn" 
-            href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
-            target="_blank">
-            <span>Contactenos</span>
-            </a>
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="flex flex-col bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
-          <figure class="max-h-60 max-w-20 w-full object-cover relative">
-            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
-            <span class="text-lg price bg-black p-2 rounded-full absolute bottom-0 right-2">$4.000</span>
+        <article class="flex flex-col border-black border-2 shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/chikorita.jpeg" alt="chikoritaImg1">
+            <img class="imgHover" src="/public/chikorita3.jpeg" alt="chikoritaImg3">
           </figure>
 
-          <div class="flex flex-col gap-2 h-full p-6">
-            <h3 class="text-lg">Charizard</h3>
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Chikorita</h3>
 
-            <p class="">Disponible en 10cm y 15cm, pintado a mano impreso en 3D</p>
+            <p class="">Disponible en 10cm y 15cm.</p>
 
-            <a class="btn" 
-            href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
-            target="_blank">
-            <span>Contactenos</span>
-            </a>
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="flex flex-col bg-gradient-to-r from-violet-600 to-violet-900 border-2 border-black">
-          <figure class="max-h-60 max-w-20 w-full object-cover relative">
-            <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg">
-            <span class="text-lg price bg-black p-2 rounded-full absolute bottom-0 right-2">$4.000</span>
+        <article class="hidden 2xl:flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/saidok1.jpeg" alt="saidokImg1">
+            <img class="imgHover" src="/public/saidok2.jpeg" alt="saidokImg2">
           </figure>
 
-          <div class="flex flex-col gap-2 h-full p-6">
-            <h3 class="text-lg">Charizard</h3>
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Saidok</h3>
 
-            <p class="">Disponible en 10cm y 15cm, pintado a mano impreso en 3D</p>
+            <p class="">Disponible en 10cm y 15cm.</p>
 
-            <a class="btn" 
-            href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
-            target="_blank">
-            <span>Contactenos</span>
-            </a>
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hidden 2xl:flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/koffing.jpeg" alt="koffingImg1">
+            <img class="imgHover" src="/public/koffing2.jpeg" alt="koffingImg2">
+          </figure>
+
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Koffing</h3>
+
+            <p class="">Disponible en 10cm y 15cm.</p>
+
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+          <figure class="max-h-60 max-w-20 w-full relative imgChange">
+            <img class="h-full w-full" src="/public/personalizado.jpeg" alt="personalizadoImg1">
+            <img class="imgHover" src="/public/personalizado2.jpeg" alt="personalizadoImg2">
+          </figure>
+
+          <div class="flex flex-col gap-1 h-full p-3">
+            <h3 class="text-lg">Personalizado</h3>
+
+            <p class="">Disponible en 10cm y 15cm.</p>
+
+            <hr class="pb-1">
+
+            <div class="flex justify-between">
+              <p class="text-lg block w-auto">$4.000</p>
+
+              <a class="btn" 
+              href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
+              target="_blank">
+              <span>Contactenos</span>
+              </a>
+            </div>
           </div>
         </article>
       </section>
 
-      <section class="flex justify-center p-8">
-        <a class="text-2xl text-orange-600" href="/tienda.html">Ver más</a>
+      <section class="flex justify-center items-center p-8">
+        <a class="text-2xl text-orange-600 inline-block" href="/tienda.html">Ver más</a>
       </section>
 
       <!-- Info -->
       <section class="h-auto p-8 md:p-16 lg:p-24 font-mono" id="formasDePago">
         <article class="flex flex-col gap-5">
-          <p class="text-lg md:text-xl lg:text-2xl">Elige el producto que deseas comprar</p>
+          <div data-aos="slide-up">
+            <p class="text-lg md:text-xl lg:text-2xl">Elige el producto que deseas comprar</p>
 
-          <ul class="list-decimal ml-7">
-            <li class="text-sm md:text-lg">Ve nuestro catalogo y elige tu producto</li>
-            <li class="text-sm md:text-lg">Haz clic en el botón de "Contactenos". Esto te dirigira hacia WhatApp</li>
-            <li class="text-sm md:text-lg">Se generará un mensaje automatico sobre el producto elegido</li>
-            <li class="text-sm md:text-lg">En la brevedad nuestro personal de ventas te estara respondiendo su consulta</li>
-          </ul>
+            <ul class="list-decimal ml-7">
+              <li class="text-sm md:text-lg">Ve nuestro catalogo y elige tu producto</li>
+              <li class="text-sm md:text-lg">Haz clic en el botón de "Contactenos". Esto te dirigira hacia WhatApp</li>
+              <li class="text-sm md:text-lg">Se generará un mensaje automatico sobre el producto elegido</li>
+              <li class="text-sm md:text-lg">En la brevedad nuestro personal de ventas te estara respondiendo su consulta</li>
+            </ul>
+         </div>
 
-          <p class="text-lg md:text-xl lg:text-2xl">Metodos de Pago</p>
+          <div data-aos="slide-up">
+            <p class="text-lg md:text-xl lg:text-2xl">Metodos de Pago</p>
 
-          <ul class="list-disc ml-5">
-            <li class="text-sm md:text-lg">Transferencia bancaria</li>
-            <li class="text-sm md:text-lg">Tarjeta de Crédito/Débito</li>
-            <li class="text-sm md:text-lg">Mercado Pago</li>
-            <li class="text-sm md:text-lg">Efectivo</li>
-          </ul>
+            <ul class="list-disc ml-5">
+              <li class="text-sm md:text-lg">Transferencia bancaria</li>
+              <li class="text-sm md:text-lg">Tarjeta de Crédito/Débito</li>
+              <li class="text-sm md:text-lg">Mercado Pago</li>
+              <li class="text-sm md:text-lg">Efectivo</li>
+            </ul>
+          </div>
 
-          <address class="flex flex-col gap-5 font-mono">
+          <address class="flex flex-col gap-5 font-mono" data-aos="slide-up">
             <p class="text-lg md:text-xl lg:text-2xl">Contactos</p>
 
             <ul class="ml-5">
@@ -217,7 +307,7 @@
       </section>
 
       <!-- Redes -->
-      <div class="hidden md:flex flex-col-reverse items-center gap-4 fixed bottom-0 right-14">
+      <div class="hidden lg:flex flex-col-reverse items-center gap-4 fixed bottom-0 right-8">
         <span class="block w-10 h-1 bg-white rounded-sm transform -rotate-90 mt-2"></span>
 
         <a href="https://www.instagram.com/efege.3d/" target="_blank"><svg class="hover:scale-125" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

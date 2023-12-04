@@ -13,6 +13,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.16"
   }
 }
