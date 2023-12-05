@@ -8,7 +8,7 @@
   </head>
   <body class="lg:flex">
      <!-- Aside -->
-    <aside class="lg:flex flex-col fixed h-screen w-64 pt-14 pb-14 font-mono bg-aside justify-between hidden">
+    <aside class="lg:flex flex-col fixed h-screen w-64 xl:xl:pt-14 xl:pb-14 font-mono bg-aside justify-between hidden">
       <h1 class="m-8 text-orange-600 text-4xl"><strong>Efege 3D</strong></h1>
 
       <ul class="m-8">
@@ -22,22 +22,23 @@
       </figure>
     </aside>
     <!-- Header -->
-    <header class="flex w-full p-4 justify-around items-center bg-aside lg:hidden">
-      <h1 class="hidden text-xl text-orange-600 sm:block md:text-3xl"><strong>Efege 3D</strong></h1>
+    <header class="flex sticky z-10 top-0 w-full p-4 justify-around items-center bg-aside lg:hidden">
+      <h1 class=" sm:text-xl text-orange-600 sm:block md:text-3xl"><strong>Efege 3D</strong></h1>
 
-      <ul class="flex gap-4">
-        <li class="text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#">Inicio</a></li>
-        <li class="text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#productos">Productos</a></li>
-        <li class="text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#formasDePago">Como Comprar</a></li>
+      <ul class="flex gap-2 sm:gap-4">
+        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#">Inicio</a></li>
+        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#productos">Productos</a></li>
+        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a href="#formasDePago">Como Comprar</a></li>
       </ul>
     </header>
+
      <!-- Main -->
     <main class="w-full h-auto flex flex-col lg:ml-64 bg-main">
        <!-- Home -->
       <section class="h-auto lg:h-screen p-8 pt-16 md:p-16 lg:p-24 lg:pb-0 font-mono">
         <article class="flex justify-center items-center mb-16">
           <div>
-          <h1 class="text-lg md:text-3xl lg:text-4xl inline-block">Impresiones Pokémon en 3D</h1>
+          <h1 class="text-xl md:text-3xl lg:text-4xl inline-block">Impresiones Pokémon en 3D</h1>
 
           <p class="text-xs sm:text-sm md:text-lg text-center text-orange-600 font-bold">Hecho por fanaticos para fanaticos</p>
           </div>
@@ -48,14 +49,20 @@
         </article>
 
         <article class="flex flex-col md:mr-24">
-          <h2 class="md:text-2xl relative w-max mb-2">Sobre nosotros</h2>
+          <h2 class="text-xl md:text-2xl relative w-max mb-2">Sobre nosotros</h2>
 
           <p class="text-sm md:text-lg lg:text-xl inline-block">En Efege 3D, nos dedicamos a llevar la imaginación a la realidad. Nuestra misión es proporcionar a los amantes de Pokémon productos excepcionales y personalizados que capturen la esencia de cada Pokémon. Creemos que cada fanático merece tener en sus manos una pieza única que refleje su amor por Pokémon.</p>
         </article>
+
+        <!-- Imagen -->
+        <figure class="hidden 2xl:flex w-full h-96 justify-center mt-10">
+          <img class="h-full w-full object-contain" src="/public/equipoPokemon.png" alt="">
+        </figure>
       </section>
+
       <!-- Productos -->
       <div class="p-8 pb-3 sm:p-16 sm:pb-3 lg:p-24 lg:pb-3 lg:pt-8 font-mono" id="productos">
-        <h3 class="text-2xl">Productos</h3>
+        <h3 class="text-xl md:text-2xl">Productos</h3>
         <p class="text-orange-600">Consultar por medidas personalizadas.</p>
       </div>
 
@@ -291,7 +298,7 @@
             </ul>
           </div>
 
-          <address class="flex flex-col gap-5 font-mono" data-aos="slide-up">
+          <address class="flex flex-col font-mono" data-aos="slide-up">
             <p class="text-lg md:text-xl lg:text-2xl">Contactos</p>
 
             <ul class="ml-5">
