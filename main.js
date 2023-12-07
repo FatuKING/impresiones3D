@@ -1,5 +1,7 @@
 import './style.css'
 
+import './scroll.js'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

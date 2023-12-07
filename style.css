@@ -38,22 +38,6 @@
   box-sizing: border-box;
 }
 
-.animation-line::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  transition: width 1.5s ease;
-  background-color: var(--orange);
-  /* background: linear-gradient(90deg, var(--violet50) 0%, var(--violet900) 100%); */
-}
-
-.animation-line:hover:before{
-  width: 100%;
-}
-
 .bg-main{
   background-color: var(--violet800);
 }
@@ -79,9 +63,9 @@ article:hover .animation-line::before{
   position: relative;
   text-align: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  transition: width 3s;
+  transition: width 3s ease-in-out;
   border: #000000 1px solid;
   box-shadow: 2px 2px #000000;
 }
@@ -99,12 +83,31 @@ article:hover .animation-line::before{
   width: 5px;
   height: 100%;
   background-color: var(--orange);
-  transition: width 1s;
+  transition: width 1s ease-in-out;
   z-index: 1;
 }
 
 .btn:hover::before {
   width: 100%;
+}
+
+.btn2{
+  background-color: transparent;
+  width: 108px;
+  padding: 5px 10px;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: width 3s;
+  border: #000000 1px solid;
+  box-shadow: 2px 2px #000000;
+  transition: transform 1s;
+}
+
+.btn2:hover{
+  scale: 1.1;
 }
 
 form {
@@ -185,4 +188,3 @@ label span:before {
   50% {transform: scale(1.05); opacity: 0.8;}
   100% {transform: scale(1); opacity: 0.6;}
 }
-
