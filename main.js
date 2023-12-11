@@ -14,3 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     once: true, 
   });
 });
+
+const btn = document.getElementById("active");
+
+btn.addEventListener('click', function(){
+    document.body.classList.toggle("dark")
+});
+
+const btnMobile = document.getElementById("activeMobile");
+
+btnMobile.addEventListener('click', function(){
+    document.body.classList.toggle("dark")
+});

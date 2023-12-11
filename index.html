@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Efege 3D</title>
   </head>
-  <body class="lg:flex">
+  <body class="lg:flex dark">
      <!-- Aside -->
-    <aside class="lg:flex flex-col fixed h-screen w-64 xl:xl:pt-14 xl:pb-14 font-mono bg-aside justify-between hidden">
-      <h1 class="m-8 text-orange-600 text-4xl"><strong>Efege 3D</strong></h1>
+    <aside class="lg:flex flex-col fixed h-screen w-64 xl:xl:pt-14 xl:pb-14 font-mono bg-light-navbar dark:bg-dark-navbar justify-between hidden">
+      <h1 class="m-8 dark:text-dark-accent text-light-accent text-4xl"><strong>Efege 3D</strong></h1>
 
       <ul class="m-8">
-        <li class="text-2xl relative inline-block w-auto hover:text-orange-600"><a class="scroll-link" href="#home">Inicio</a></li>
-        <li class="text-2xl relative inline-block w-auto hover:text-orange-600"><a class="scroll-link" href="#productos">Productos</a></li>
-        <li class="text-2xl relative inline-block w-auto hover:text-orange-600"><a class="scroll-link" href="#formasDePago">Como Comprar</a></li>
+        <li class="text-2xl relative inline-block w-auto dark:text-dark-text dark:hover:text-dark-accent hover:text-light-accent"><a class="scroll-link" href="#home">Inicio</a></li>
+        <li class="text-2xl relative inline-block w-auto dark:text-dark-text dark:hover:text-dark-accent hover:text-light-accent"><a class="scroll-link" href="#productos">Productos</a></li>
+        <li class="text-2xl relative inline-block w-auto dark:text-dark-text dark:hover:text-dark-accent hover:text-light-accent"><a class="scroll-link" href="#formasDePago">Como Comprar</a></li>
       </ul>
  
       <figure class="m-4">
@@ -22,29 +22,29 @@
       </figure>
     </aside>
     <!-- Header -->
-    <header class="flex sticky z-10 top-0 w-full p-4 justify-around items-center bg-aside lg:hidden">
-      <h1 class=" sm:text-xl text-orange-600 sm:block md:text-3xl"><strong>Efege 3D</strong></h1>
+    <header class="flex sticky z-10 top-0 w-full p-4 justify-around items-center bg-light-navbar dark:bg-dark-navbar lg:hidden">
+      <h1 class=" sm:text-xl dark:text-dark-accent text-light-accent sm:block md:text-3xl"><strong>Efege 3D</strong></h1>
 
       <ul class="flex gap-2 sm:gap-4">
-        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a class="scroll-link" href="#home">Inicio</a></li>
-        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a class="scroll-link" href="#productos">Productos</a></li>
-        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto hover:text-orange-600"><a class="scroll-link" href="#formasDePago">Como Comprar</a></li>
+        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto dark:text-dark-text dark:hover:text-dark-accent hover:text-light-accent"><a class="scroll-link" href="#home">Inicio</a></li>
+        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto dark:text-dark-text dark:hover:text-dark-accent hover:text-light-accent"><a class="scroll-link" href="#productos">Productos</a></li>
+        <li class="text-sm sm:text-base md:text-xl relative inline-block w-auto dark:text-dark-text dark:hover:text-dark-accent hover:text-light-accent"><a class="scroll-link" href="#formasDePago">Como Comprar</a></li>
       </ul>
 
-      <button id="darkMode"><svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 hover:scale-110" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+      <button id="activeMobile"><svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 hover:scale-110 dark:text-dark-text" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
         <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
       </svg></button>
     </header>
 
      <!-- Main -->
-    <main class="w-full h-auto flex flex-col lg:ml-64 bg-main">
+    <main class="w-full h-auto flex flex-col lg:ml-64 bg-light-primary dark:bg-dark-primary">
        <!-- Home -->
       <section id="home" class="h-auto lg:h-screen p-8 pt-16 md:p-16 lg:p-24 lg:pb-0 font-mono">
         <article class="flex justify-center items-center mb-16">
           <div>
-          <h1 class="text-xl md:text-3xl lg:text-4xl inline-block">Impresiones Pokémon en 3D</h1>
+          <h1 class="text-xl md:text-3xl lg:text-4xl inline-block dark:text-dark-text">Impresiones Pokémon en 3D</h1>
 
-          <p class="text-xs sm:text-sm md:text-lg text-center text-orange-600 font-bold">Hecho por fanaticos para fanaticos</p>
+          <p class="text-xs sm:text-sm md:text-lg text-center dark:text-dark-accent text-light-accent font-bold">Hecho por fanaticos para fanaticos</p>
           </div>
 
           <figure class="hidden w-30 sm:block sm:h-40">
@@ -53,18 +53,18 @@
         </article>
 
         <article class="flex flex-col md:mr-24">
-          <h2 class="text-xl md:text-2xl relative w-max mb-2">Sobre nosotros</h2>
+          <h2 class="text-xl md:text-2xl relative w-max mb-2 dark:text-dark-text">Sobre nosotros</h2>
 
-          <p class="text-sm md:text-lg lg:text-xl inline-block">En Efege 3D, nos dedicamos a llevar la imaginación a la realidad. Nuestra misión es proporcionar a los amantes de Pokémon productos excepcionales y personalizados que capturen la esencia de cada Pokémon. Creemos que cada fanático merece tener en sus manos una pieza única que refleje su amor por Pokémon.</p>
+          <p class="text-sm md:text-lg lg:text-xl inline-block dark:text-dark-text">En Efege 3D, nos dedicamos a llevar la imaginación a la realidad. Nuestra misión es proporcionar a los amantes de Pokémon productos excepcionales y personalizados que capturen la esencia de cada Pokémon. Creemos que cada fanático merece tener en sus manos una pieza única que refleje su amor por Pokémon.</p>
         </article>
 
         <!-- Redes -->
         <div class="flex gap-2 pt-2 lg:hidden">
-          <a href="https://www.instagram.com/efege.3d/" target="_blank"><svg class="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <a href="https://www.instagram.com/efege.3d/" target="_blank"><svg class="w-5 h-5 sm:w-6 sm:h-6 dark:text-dark-text" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
           </svg></a>
   
-          <a href="" target="_blank"><svg class="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+          <a href="" target="_blank"><svg class="w-5 h-5 sm:w-6 sm:h-6 dark:text-dark-text" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
             <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
           </svg></a>
         </div>
@@ -77,12 +77,12 @@
 
       <!-- Productos -->
       <div class="p-8 pb-3 pt-16 sm:p-16 sm:pb-3 lg:p-24 lg:pb-3 lg:pt-8 font-mono" id="productos">
-        <h3 class="text-xl md:text-2xl">Productos</h3>
-        <p class="text-orange-600">Consultar por medidas personalizadas.</p>
+        <h3 class="text-xl md:text-2xl dark:text-dark-text">Productos</h3>
+        <p class="text-dark-accent">Consultar por medidas personalizadas.</p>
       </div>
 
       <section class="h-auto grid gridRow gap-6 p-8 pt-0 pb-0 sm:p-16 sm:pb-0 sm:pt-0 lg:p-24 lg:pb-0 lg:pt-0 font-mono">
-        <article class="flex flex-col border-black border-2 shadow-black shadow-sm" data-aos="slide-up">
+        <article class="flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/charizard1.jpeg" alt="charizardImg1">
@@ -90,194 +90,194 @@
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Charizard</h3>
+            <h3 class="text-lg dark:text-dark-text">Charizard</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
-            <hr class="pb-1">
+            <hr class="pb-1"> 
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+        <article class="flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/blastoise1.jpeg" alt="blastoiseImg1">
             <img class="imgHover" src="/public/blastoise2.jpeg" alt="blastoiseImg2">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Blastoise</h3>
+            <h3 class="text-lg dark:text-dark-text">Blastoise</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+        <article class="flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full imgChange relative">
             <img class="h-full w-full" src="/public/gengar1.jpeg" alt="gengarImg1">
             <img class="imgHover" src="/public/gengar2.jpeg" alt="gengarImg2">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Gengar</h3>
+            <h3 class="text-lg dark:text-dark-text">Gengar</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+        <article class="flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/charmander1.jpeg" alt="charmanderImg1">
             <img class="imgHover" src="/public/charmander2.jpeg" alt="charmanderImg2">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Charmander</h3>
+            <h3 class="text-lg dark:text-dark-text">Charmander</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="flex flex-col border-black border-2 shadow-black shadow-sm" data-aos="slide-up">
+        <article class="flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/chikorita.jpeg" alt="chikoritaImg1">
             <img class="imgHover" src="/public/chikorita3.jpeg" alt="chikoritaImg3">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Chikorita</h3>
+            <h3 class="text-lg dark:text-dark-text">Chikorita</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="hidden 2xl:flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+        <article class="hidden 2xl:flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/saidok1.jpeg" alt="saidokImg1">
             <img class="imgHover" src="/public/saidok2.jpeg" alt="saidokImg2">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Saidok</h3>
+            <h3 class="text-lg dark:text-dark-text">Saidok</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="hidden 2xl:flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+        <article class="hidden 2xl:flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/koffing.jpeg" alt="koffingImg1">
             <img class="imgHover" src="/public/koffing2.jpeg" alt="koffingImg2">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Koffing</h3>
+            <h3 class="text-lg dark:text-dark-text">Koffing</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
         </article>
 
-        <article class="flex flex-col border-2 border-black shadow-black shadow-sm" data-aos="slide-up">
+        <article class="flex flex-col border-light-text shadow-light-text dark:border-dark-navbar border-2 dark:shadow-dark-navbar shadow-sm" data-aos="slide-up">
           <figure class="max-h-60 max-w-20 w-full relative imgChange">
             <img class="h-full w-full" src="/public/personalizado.jpeg" alt="personalizadoImg1">
             <img class="imgHover" src="/public/personalizado2.jpeg" alt="personalizadoImg2">
           </figure>
 
           <div class="flex flex-col gap-1 h-full p-3">
-            <h3 class="text-lg">Personalizado</h3>
+            <h3 class="text-lg dark:text-dark-text">Personalizado</h3>
 
-            <p class="">Disponible en 10cm y 15cm.</p>
+            <p class="dark:text-dark-text">Disponible en 10cm y 15cm.</p>
 
             <hr class="pb-1">
 
             <div class="flex justify-between">
-              <p class="text-lg block w-auto">$4.000</p>
+              <p class="text-lg block w-auto dark:text-dark-text">$4.000</p>
 
               <a class="btn" 
               href="https://wa.me/1135172624?text=¡Hola!,%20me%20gustaria%20comprar%20un%20Charizard,%20¿esta%20disponible?,%20¿Cuales%20son%20sus%20medidas?%20" 
               target="_blank">
-              <span>Contactenos</span>
+              <span class="dark:text-dark-text">Contactenos</span>
               </a>
             </div>
           </div>
@@ -285,42 +285,42 @@
       </section>
 
       <section class="flex justify-center items-center p-8">
-        <a class="text-2xl inline-block btn2" href="/tienda.html">Ver más</a>
+        <a class="text-2xl inline-block btn2 dark:text-dark-text" href="/tienda.html">Ver más</a>
       </section>
 
       <!-- Info -->
       <section class="h-auto p-8 md:p-16 lg:p-24 font-mono" id="formasDePago">
         <article class="flex flex-col gap-5">
           <div data-aos="slide-up">
-            <p class="text-lg md:text-xl lg:text-2xl">Elige el producto que deseas comprar</p>
+            <p class="text-lg md:text-xl lg:text-2xl dark:text-dark-text">Elige el producto que deseas comprar</p>
 
             <ul class="list-decimal ml-7">
-              <li class="text-sm md:text-lg">Ve nuestro catalogo y elige tu producto</li>
-              <li class="text-sm md:text-lg">Haz clic en el botón de "Contactenos". Esto te dirigira hacia WhatApp</li>
-              <li class="text-sm md:text-lg">Se generará un mensaje automatico sobre el producto elegido</li>
-              <li class="text-sm md:text-lg">En la brevedad nuestro personal de ventas te estara respondiendo su consulta</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Ve nuestro catalogo y elige tu producto</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Haz clic en el botón de "Contactenos". Esto te dirigira hacia WhatApp</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Se generará un mensaje automatico sobre el producto elegido</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">En la brevedad nuestro personal de ventas te estara respondiendo su consulta</li>
             </ul>
          </div>
 
           <div data-aos="slide-up">
-            <p class="text-lg md:text-xl lg:text-2xl">Metodos de Pago</p>
+            <p class="text-lg md:text-xl lg:text-2xl dark:text-dark-text">Metodos de Pago</p>
 
             <ul class="list-disc ml-5">
-              <li class="text-sm md:text-lg">Transferencia bancaria</li>
-              <li class="text-sm md:text-lg">Tarjeta de Crédito/Débito</li>
-              <li class="text-sm md:text-lg">Mercado Pago</li>
-              <li class="text-sm md:text-lg">Efectivo</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Transferencia bancaria</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Tarjeta de Crédito/Débito</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Mercado Pago</li>
+              <li class="text-sm md:text-lg dark:text-dark-text">Efectivo</li>
             </ul>
           </div>
 
           <address class="flex flex-col font-mono" data-aos="slide-up">
-            <p class="text-lg md:text-xl lg:text-2xl">Contactos</p>
+            <p class="text-lg md:text-xl lg:text-2xl dark:text-dark-text">Contactos</p>
 
             <ul class="ml-5">
-              <li class="text-sm md:text-lg"><a href="" target="_blank"><svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <li class="text-sm md:text-lg dark:text-dark-text"><a href="" target="_blank"><svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
               </svg> 1135172624</a></li>
-              <li class="text-sm md:text-lg"><a href="mailto:printer.efege.3d@gmail.com" target="_blank"><svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <li class="text-sm md:text-lg dark:text-dark-text"><a href="mailto:printer.efege.3d@gmail.com" target="_blank"><svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
               </svg> printer.efege.3d@gmail.com</a></li>
             </ul>
@@ -330,17 +330,17 @@
 
       <!-- Redes -->
       <div class="hidden lg:flex flex-col-reverse items-center gap-4 fixed bottom-0 right-8">
-        <span class="block w-10 h-1 bg-white rounded-sm transform -rotate-90 mt-2"></span>
+        <span class="block w-10 h-1 bg-light-text dark:bg-dark-text rounded-sm transform -rotate-90 mt-2"></span>
 
-        <a href="https://www.instagram.com/efege.3d/" target="_blank"><svg class="hover:scale-125" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <a href="https://www.instagram.com/efege.3d/" target="_blank"><svg class="hover:scale-125 dark:text-dark-text" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
         </svg></a>
 
-        <a href="" target="_blank"><svg class="hover:scale-125" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+        <a href="" target="_blank"><svg class="hover:scale-125 dark:text-dark-text" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
           <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
         </svg></a>
 
-        <button id="darkMode"><svg class="hover:scale-125" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+        <button id="active"><svg class="hover:scale-125 dark:text-dark-text" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
           <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
         </svg></button>
       </div>

@@ -6,10 +6,22 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'charizard1': "url('/public/charizard1.jpeg')",
+      colors: {
+        dark: {
+          primary: '#1a1a1a',
+          text: '#ffffff',
+          accent: '#FF4F00',
+          navbar: '#000000',
+        },
+        light: {
+          primary: '#ffffff',
+          text: '#1a1a1a',
+          accent: '#FF4F00',
+          navbar: '#5B21B6',
+        },
+      },
     },
   },
+  darkMode: 'class',
   plugins: [],
-}}
-
+};

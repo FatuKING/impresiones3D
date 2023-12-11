@@ -7,23 +7,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   --orange: #FF4F00;
-  --orange2: #F97316;
-  --violet200: #e4dbf9;
-  --violet300: #d0bff3;
-  --violet400: #b79aeb;
-  --violet500: #9f71e1;
-  --violet600: #9052d5;
-  --violet700: #8040c1;
-  --violet800: #343541;
-  --violet900: #000000;
-  --violet950: #371b58;
-
-
+  --dark800: #1a1a1a;
+  --dark900: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,14 +22,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.bg-main{
-  background-color: var(--violet800);
-}
-
-.bg-aside{
-  background-color: var(--violet900);
 }
 
 article:hover .animation-line::before{
